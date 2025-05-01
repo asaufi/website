@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anas SAUFI - Software engineer">
+    <title>Anas Saufi - Better Hire Anas !</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+       <link rel="icon" href="Image/logo.png" type="image/png">
+
+
+    <style>
+        :root {
+    --primary-color: #4fe0e9; /* Light teal color */
+    --secondary-color: #37c7d3; /* Darker teal color */
+    --background-color: #060b0c; /* Dark background color */
+    --modal-background-color: #0b1120; /* Modal background color */
+    --text-color: #ffffff; /* White text color */
+}
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #060b0c;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0b1120;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            padding-left: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        nav {
+            margin-left: auto;
+            padding-right: 30px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #37c7d3;
+        }
+            .item-text-header{
+               color: #37c7d3;
+            }
+        nav ul li:first-child a {
+            color: #4fe0e9;
+        }
+
+        writing-effect {
+    display: inline-block;
+    border-right: 2px solid #4fe0e9; /* Cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.shop-item {
+    position: relative;
+    list-style: none;
+}
+
+
+.shop-item .new-tag {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: linear-gradient(45deg, #ff4d4d, #ff6600);
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.8), 0 0 15px rgba(255, 69, 0, 0.5);
+    animation: glow 1.5s infinite ease-in-out;
+}
+
+/* Glowing animation */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 69, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 69, 0, 0.5);
+    }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #4fe0e9; }
+}
+
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                padding-left: 70px;
+    padding-right: 70px;
+            background-color: #060b0c;
+        }
+        .write{
+            height: 80px;
+            align-items: center;
+        }
+        .content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero h2 {
+            color: #4fe0e9;
+            font-size: 30px;
+
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .buttons {
+            display: flex;
+            gap: 5px;
+        }
+        .buttons1{
+            gap: 100px;
+            align-items: center;
+        }
+        .buttons button {
+            background-color: #4fe0e9;
+            color: #fff;
+            font-weight : 700;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-right: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .buttons button:hover {
+            background-color: #37c7d3;
+            transform: scale(1.05);
+        }
+
+        .hero-image {
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            filter: brightness(0.9);
+            transition: filter 0.3s, transform 0.3s;
+            animation: breathing1 4s infinite;
+        }
+
+        @keyframes breathing1 {
+            0%, 100% {
+                filter: brightness(0.6);
+            }
+            50% {
+                filter: brightness(1);
+            }
+        }
+
+        .services {
+            padding: 50px;
+            background-color: #060b0c;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+
+        .latest-project
+        h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .service-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service {
+            background: #0b1120;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+
+        .service h3 {
+            font-size: 1.2em;
+            color: #4fe0e9;
+            margin-bottom: 10px;
+        }
+
+        .projects {
+            margin: 5%;
+            background-color: #060b0c;
+            padding-bottom: 8%;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+.content-width {
+  width: 86%;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+    height: 100%;
+       background-color:#0b1120 ;
+
+     padding-top: 5%;
+    border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slideshow-items {
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+
+.item {
+  position: absolute;
+  width: 100%;
+  height: auto;
+ cursor: pointer;
+ display: flex;
+}
+
+.item-image-container {
+  position: relative;
+  width: 42%;
+      border-radius: 10px; /* Adjust the radius value as needed */
+
+}
+
+
+.item-image-container::before {
+  content: '';
+  position: relative;
+    top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.item-image {
+  position: relative;
+  width: 80%;
+    padding-left: 4%;
+
+  opacity: 0;
+  display: block;
+  /* transition: property name | duration | timing-function | delay  */
+  transition: opacity .3s ease-out .45s;
+}
+
+.item.active .item-image {
+  opacity: 1;
+}
+
+.item.active .item-image-container::before {
+  opacity: .8;
+}
+
+.item-description {
+  right: 0;
+  width: 50%;
+  padding-right: 4%;
+  line-height: 1.8;
+    text-align: left; /* Ensures text starts from the left */
+
+}
+
+/* Staggered Vertical Items ------------------------------------------------------*/
+.item-header {
+  position: absolute;
+  top: 150px;
+  left: -1.8%;
+  z-index: 100;
+}
+
+.item-header .vertical-part {
+  margin: 0 -4px;
+  font-size: 2vw;
+  color: #ffffff;
+}
+
+.vertical-part {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.vertical-part b {
+  display: inline-block;
+  transform: translateY(100%);
+}
+
+.item-header .vertical-part b {
+  transition: .5s;
+}
+
+.item-description .vertical-part b {
+  transition: .21s;
+}
+
+.item.active .item-header .vertical-part b {
+  transform: translateY(0);
+      background-color: #0b1120;
+  border-radius: 10px; /* Rounded corners */
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.item.active .item-description .vertical-part b {
+  transform: translateY(0);
+}
+/* Controls ----------------------------------------------------------------------*/
+.controls {
+    position: absolute;
+    z-index: 1000;
+    text-align: left;
+}
+
+.controls ul {
+  list-style: none;
+  margin: 0;
+background: #0b1120;
+
+}
+
+.controls ul li {
+  display: inline-block;
+  width: 12px; /* Adjust size as needed */
+  height: 12px; /* Adjust size as needed */
+  margin: 0 5px; /* Adjust spacing as needed */
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;/* Make the dots circular */
+  transition: background 0.3s; /* Smooth transition for background color */
+}
+
+.controls ul li.active {
+  background:  #4fe0e9;
+}
+        .contact {
+            padding: 50px;
+            background-color: #060b0c;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .contact button {
+            background-color: #4fe0e9;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .contact button:hover {
+            background-color: #37c7d3;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #0b1120;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .social-media a {
+            color: #4fe0e9;
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30%;
+            border: 2px solid #4fe0e9;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .social-media a:hover {
+            background-color: #37c7d3;
+            color: #fff;
+        }
+
+        .scroll-up {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4fe0e9;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 30%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            display: none;
+            z-index: 1000;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-up:hover {
+            background-color: #37c7d3;
+            transform: scale(1.1);
+        }
+
+
+        .menu-icon {
+                display: none;
+                cursor: pointer;
+                font-size: 24px;
+                color: #fff;
+                padding-left:70%;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+.projects{
+    margin:5%
+}
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background-color: #0b1120;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+            .content-width {
+
+            height: 70vh;
+            margin: 0 auto;
+                }
+
+            .hero-image {
+                display: flex;
+            }
+            .buttons{
+                justify-content: center;
+            }
+.vertical-part {
+
+    font-size: 16px;
+}
+             nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #0b1120;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex;
+        padding-left: 50px;
+        width: 85%;
+    }
+
+    .menu-icon {
+        display: block; /* Show menu icon on mobile */
+    }
+    .menu-icon:hover{
+             color:  #37c7d3;
+        }
+    .slideshow-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .controls {
+        position: absolute;
+    z-index: 900;
+    text-align: left;
+        display: none;
+    }
+
+    .item-description {
+        top: auto;
+        right: auto;
+        width: auto;
+        padding-top:20%;
+        padding-right: 0;
+        font-weight :0;
+        text-align: center; /* Adjust as needed */
+        height: 50px;
+    }
+    
+    .item-image-container{
+        display: none;
+    }
+    .controls ul {
+    padding: 0;
+}
+        }
+.modalimagepro {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px;
+    transition: transform 0.3s;
+}
+
+.modalimagepro:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+#modalTitle {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#modalDescription {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+/* Skills Section */
+.skills {
+
+    font-size: 16px;
+    color: var(--text-color); /* White text */
+    border-radius: 10px;
+    max-width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.skills:before {
+    content: "Skills Used: ";
+    display: inline;
+    color: var(--secondary-color); /* Blue color */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Breathing animation */
+@keyframes breathing {
+    0%, 100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+.skill-item {
+    display: inline-block;
+    color: var(--text-color); /* White text */
+    margin: 0 5px;
+    transition: opacity 0.3s, transform 0.3s;
+    animation: breathing 3s ease-in-out infinite; /* Apply breathing animation */
+}
+
+.modal {
+  display: none; /* Initially hide the modal */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+    backdrop-filter: blur(5px); /* Add blur effect */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #141a1f;
+    padding: 40px;
+    width: 90%; /* Adjust width to be more responsive */
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Darker shadow for a more modern feel */
+    color: #fff;
+    position: relative;
+}
+
+.modal-content h2 {
+    font-size: 30px; /* Increase font size */
+    text-align: center;
+    margin-bottom: 30px; /* Adjust spacing */
+    color: #4fe0e9;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon input,
+.input-icon textarea {
+    width: 100%; /* Make input and textarea take full width */
+    padding: 15px; /* Increase padding for bigger input */
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1f272b;
+    color: #fff;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Focus and hover effects for input */
+.input-icon input:focus,
+.input-icon textarea:focus {
+    border-color: #4fe0e9;
+    box-shadow: 0 0 10px rgba(79, 224, 233, 0.6);
+}
+
+.input-icon input:hover,
+.input-icon textarea:hover {
+    border-color: #37c7d3;
+    box-shadow: 0 0 5px rgba(79, 224, 233, 0.3);
+}
+
+/* Icons in input fields */
+.input-icon i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #37c7d3;
+    font-size: 18px;
+}
+
+/* Subject field specific styling */
+#subject {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1f272b;
+    color: #fff;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subject field specific styling */
+#subject:hover {
+    border-color: #37c7d3;
+    box-shadow: 0 0 5px rgba(79, 224, 233, 0.3);
+}
+
+ textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1f272b;
+    color: #fff;
+    min-height: 120px;
+    resize: none;
+}
+textarea:hover {
+    border-color: #37c7d3;
+    box-shadow: 0 0 5px rgba(79, 224, 233, 0.3);
+}
+.modal-content button[type="submit"] {
+    background-color: #4fe0e9;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight:700;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #37c7d3;
+    transform: scale(1.05);
+}
+
+.close {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 4px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #37c7d3;
+}
+
+
+/* Dropdown Menu Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #0b1120; /* Match header background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #37c7d3; /* Hover background */
+    color: #fff; /* Hover text */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+
+/* Latest Project Section */
+ .latest-project {
+        background-color: #0b1120;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 50px auto;
+        max-width: 900px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+        font-size: 32px;
+        color: #FFF;
+        font-weight :700;
+        text-align: center;
+        margin-bottom: 30px;
+     
+    }
+
+ 
+    .project-header .project-name {
+        font-size: 22px;
+          font-weight :700;
+        color: #37c7d3;
+        margin-bottom: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .project-header .project-date {
+        font-size: 14px;
+        color: #b0bec5;
+    }
+
+    .project-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .project-image img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-description {
+        margin-left: 30px;
+        color: #FFF;
+        font-size: 16px;
+        line-height: 1.6;
+        flex-grow: 1;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.project-links a {
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #4fe0e9;
+}
+
+.project-links a i {
+    margin-right: 5px;  /* Space between icon and text */
+}
+
+.project-links a:hover {
+    color: #37c7d3;  /* GitHub blue */
+}
+
+.github-link:hover {
+    color: #4fe0e9;
+}
+
+.docker-link:hover {
+    color: #37c7d3;  /* Docker blue */
+}
+/* Mobile and smaller screen adjustments */
+@media (max-width: 768px) {
+    /* Adjust padding and margins for smaller screens */
+    .latest-project {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .section-title {
+        font-size: 28px; /* Reduce font size for small screens */
+        margin-bottom: 20px;
+    }
+
+    .project-header .project-name {
+        font-size: 18px;  /* Reduce font size */
+    }
+
+    .project-info {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Align items to the left */
+    }
+
+    .project-image img {
+        width: 150px;  /* Reduce image size */
+        height: 150px;
+    }
+
+    .project-description {
+        margin-left: 0;  /* Remove left margin for smaller screens */
+        font-size: 14px;  /* Adjust font size */
+    }
+
+    .project-links {
+        gap: 10px;
+    }
+
+    .project-links a {
+        font-size: 16px;  /* Adjust font size for links */
+    }
+}
+
+/* For very small screens (like mobile phones) */
+@media (max-width: 480px) {
+    .latest-project {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .section-title {
+        font-size: 24px;  /* Further reduce font size */
+    }
+
+    .project-header .project-name {
+        font-size: 16px;  /* Further reduce font size */
+    }
+
+    .project-image img {
+        width: 120px;  /* Further reduce image size */
+        height: 120px;
+    }
+
+    .project-description {
+        font-size: 12px;  /* Further reduce font size */
+    }
+
+    .project-links a {
+        font-size: 14px;  /* Further reduce font size for links */
+    }
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Prevent elements from going outside the container */
+}
+
+.skills-section h2 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    white-space: nowrap; /* Prevent items from wrapping to a new line */
+    animation: moveLeft 20s linear infinite; /* Animation for scrolling */
+}
+
+/* Individual Skill Items */
+.skill-item {
+    display: inline-flex; /* Keep items inline */
+    flex-direction: column;
+    align-items: center;
+    min-width: 50px; /* Adjust size as needed */
+    font-family: 'Poppins', sans-serif;
+}
+
+.skill-item img {
+    width: 80px; /* Logo size */
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item p {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Animation for moving items */
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-110%);
+    }
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    background-color: #0b1120; /* Replace with your website's primary background color */
+    color: white; /* Text color */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.cookie-banner-content {
+    max-width: 70%;
+}
+
+.cookie-banner h4 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cookie-banner p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #dcdcdc; /* Lighter text color for better contrast */
+}
+
+.cookie-banner-logo {
+    display: none; /* Remove logo */
+}
+
+.cookie-banner-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.cookie-banner-buttons button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-accept {
+    background-color: #28a745; /* Green button (change if needed) */
+    color: white;
+}
+
+
+.btn-close {
+    background-color: #ff004b;
+    color: #ddd; /* Lighter close button text */
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+/* Optional: Adjust the button hover states */
+.cookie-banner-buttons button:hover {
+    opacity: 0.8;
+}
+/* For small screens, e.g., mobile */
+@media (max-width: 400px) {
+    /* Skills Section */
+    .skills-section h2 {
+        font-size: 24px;
+    }
+
+    .skills-container {
+        gap: 20px;
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+         animation: moveLeft 15s linear infinite; 
+    }
+    @keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-170%);
+     }
+    }
+    .skill-item {
+        min-width: 40px; /* Adjust size for smaller screens */
+    }
+
+    .cookie-banner {
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start; /* Stack the content vertically */
+        justify-content: flex-start;
+    }
+
+    .cookie-banner-content {
+        max-width: 100%; /* Full width for smaller screens */
+        margin-bottom: 10px;
+    }
+
+    .cookie-banner h4 {
+        font-size: 1rem;
+    }
+
+    .cookie-banner p {
+        font-size: 0.8rem;
+    }
+
+    .cookie-banner-buttons {
+        gap: 10px;
+    }
+
+     .cookie-banner-buttons {
+        display: flex;
+        justify-content: space-between; /* Align the buttons in a row */
+        width: 100%; /* Full width */
+        gap: 10px; /* Space between buttons */
+    }
+
+    .cookie-banner-buttons button {
+        width: 48%; /* Ensure the buttons are of equal width and fit on the same line */
+        text-align: center; /* Align text to the center */
+    }
+}
+
+/* For medium screens, like tablets */
+@media (max-width: 1024px) {
+    .skills-container {
+        gap: 30px;
+        animation: moveLeft 20s linear infinite; 
+    }
+    /* Animation for moving items */
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+}
+    .skill-item {
+        min-width: 40px;
+    }
+
+    .cookie-banner {
+        padding: 18px;
+    }
+
+    .cookie-banner h4 {
+        font-size: 1.1rem;
+    }
+
+    .cookie-banner p {
+        font-size: 0.9rem;
+    }
+    
+     .cookie-banner-buttons {
+        display: flex;
+        justify-content: space-between; /* Align the buttons in a row */
+        width: 100%; /* Full width */
+        gap: 10px; /* Space between buttons */
+    }
+
+    .cookie-banner-buttons button {
+        width: 48%; /* Ensure the buttons are of equal width and fit on the same line */
+        text-align: center; /* Align text to the center */
+    }
+}
+        
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">Anas.</div>
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Experiences</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                     <a style="cursor: pointer;">Curriculum Vitae</a>
+                        <ul class="dropdown-menu">
+                         <li><a href="#" onclick="navigateToCV('fr')">French</a></li>
+                        <li><a href="#" onclick="navigateToCV('en')">English</a></li>
+                </ul>
+                 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner-content">
+        <h4>Why do we use cookies?</h4>
+        <p>They help us ensure the proper functioning of the site and monitor the audience of our websites.</p>
+        <small>Consent certified by <strong>ExpertKick</strong>.</small>
+    </div>
+    <div class="cookie-banner-buttons">
+        <button class="btn-close" onclick="closeBanner()">Close</button>
+        <button class="btn-accept" onclick="acceptCookies()">Accept</button>
+    </div>
+</div>
+    <section id="home" class="hero">
+        <div class="content">
+            <h1>Hey ! I am SAUFI Anas</h1>
+            <div class="write">
+            <h2 class="writing-effect"></h2>
+                </div>
+            <p>I’m passionate about software engineering, from backend systems in C++ to full-stack web development with React and Node.js. With a strong interest in distributed systems and real-time data solutions, I aim to design efficient, scalable platforms that meet today’s technical challenges.</p>
+            <div class="buttons">
+                <button onclick="window.location.href='#services'">Explore Services</button>
+                <button onclick="window.location.href='#contact'">Get in Touch</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="Downloads/anas.jpg" alt="Hero Image">
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <div class="service-container">
+            
+            <div class="service">
+                <h3>Full-Stack Development</h3>
+                <p>Building scalable web applications from front-end to back-end.</p>
+            </div>
+            <div class="service">
+                <h3>C++ Development</h3>
+                <p>Building robust and scalable applications using C++.</p>
+            </div>
+            <div class="service">
+                <h3>AI Solutions</h3>
+                <p>Implementing AI and machine learning models to solve complex problems.</p>
+            </div>
+            <div class="service">
+                <h3>UI Design</h3>
+                <p>Crafting intuitive and visually appealing user interfaces, leveraging top-notch design skills to enhance user experience.</p>
+            </div>
+        </div>
+    </section>
+    <h2 class="section-title">Latest Project</h2>
+<section id="latest-project" class="latest-project">
+    
+    <div class="project-header">
+        <p class="project-name">Observability Integration in C++</p>
+        <p class="project-date">29 April 2025</p>
+    </div>
+    <div class="project-info">
+        <div class="project-image">
+            <img src="Downloads/latest_project.png" alt="QA Automator Docker Image">
+        </div>
+        <div class="project-description">
+            <p>I am currently working on enhancing observability features in a C++ application by integrating a modern telemetry framework. This involves designing and implementing a centralized component for trace generation and export, managing runtime dependencies, and ensuring the reliability of the integration through automated testing. The goal is to improve monitoring and diagnostic capabilities while aligning with industry standards for software instrumentation.</p>
+           <div class="project-links">
+        
+    </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="projects">
+    <h2>Experiences & Projects</h2>
+   <div class="content-width">
+<div class="slideshow"  >
+    <!-- Slideshow Items -->
+    <div class="controls">
+      <ul>
+        <li class="control" data-index="0"></li>
+        <li class="control" data-index="1"></li>
+        <li class="control" data-index="2"></li>
+         
+      </ul>
+    </div>
+<div class="slideshow-items">
+      <div class="item"  id="project1">
+        <div class="item-image-container">
+          <img class="item-image" src="image/um6p-titre.png" />
+        </div>
+        <div class="item-description">
+          <span class="vertical-part">
+            <b class="item-text-header">Assistant Developer – Autonomous Fire Detection System</b>
+          </span>
+            <span class="vertical-part">
+              <b>As an Assistant Developer, I contributed to the design and implementation of an autonomous fire detection system. My role involved engineering real-time intervention mechanisms, building a structured database to collect detection data, and developing a responsive web application to visualize alerts as they occurred. This project combined embedded systems with full-stack development, reinforcing my ability to deliver real-world solutions that integrate software and hardware effectively.</b>
+          </span>
+        </div>
+      </div>
+      <div class="item" id="project2" >
+        <div class="item-image-container">
+          <img class="item-image" src="image/2-titre.png" />
+        </div>
+        <!-- Staggered Description Elements -->
+        <div class="item-description">
+          <span class="vertical-part">
+            <b class="item-text-header" > Web Developer – Secure Real Estate Platform</b>
+          </span>
+            <span class="vertical-part">
+                <b>During this internship, I developed a full-featured real estate platform with a focus on security and user experience. Using Express.js and MongoDB, I implemented complete CRUD operations and designed user and agent role management. I integrated authentication, session handling, and route security, ensuring the platform adhered to modern web standards. I also conducted unit and functional tests to maintain code reliability and system robustness. This experience strengthened my backend development skills and deepened my understanding of web application security.</b>
+            </span>
+        </div>
+      </div>
+      <div class="item" id="project3" >
+        <div class="item-image-container">
+          <img class="item-image" src="image/ds-titre.png" />
+        </div>
+
+        <!-- Staggered Description Elements -->
+        <div class="item-description">
+          <span class="vertical-part">
+            <b class="item-text-header">Software Development Engineer Intern – Distributed Monitoring System</b>
+          </span>
+          <span class="vertical-part">
+            <b>Currently working as a Software Development Engineer Intern at Dassault Systèmes, where I am prototyping a distributed system for centralized log and trace management. I am leveraging technologies such as OpenTelemetry, Jaeger, and OpenSearch to design solutions that handle high-volume data flows efficiently. My responsibilities include studying scalable architectures, optimizing data analysis workflows, and collaborating closely with infrastructure and distributed computing teams. This internship is deepening my expertise in cloud-native systems and real-time monitoring solutions.</b>
+          </span>
+        </div>
+      </div>
+
+    
+    
+
+  </div>
+</div>
+</section>
+
+<section id="skills" class="skills-section">
+    <h2 class="section-title">Technical Skills & Core Competencies</h2>
+    <div class="skills-container">
+        <div class="skills-marquee">
+
+            <div class="skill-item">
+                <img src="image/c++.png" alt="c">
+            </div>
+            <div class="skill-item">
+                <img src="image/docker.png" alt="Docker">
+            </div>
+            <div class="skill-item">
+                <img src="image/Kube.png" alt="Kubernetes">
+            </div>
+            <div class="skill-item">
+                <img src="image/react.png" alt="Jira">
+            </div>
+            <div class="skill-item">
+                <img src="image/Python.png" alt="Python">
+            </div>
+            <div class="skill-item">
+                <img src="image/gitlab.png" alt="Gitlab">
+            </div>
+           
+            <div class="skill-item">
+                <img src="image/js.png" alt="JavaScript">
+            </div>
+            <div class="skill-item">
+                <img src="image/sql.png" alt="SQL">
+            </div>
+            
+            
+            
+            
+            <!-- Add more skill items as needed -->
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for any inquiries or collaborations.</p>
+      <div class="buttons1">
+    <button onclick="openModal('contactModal')">
+        <i class="fas fa-envelope"></i>
+    </button>
+       <a href="tel:+33753774592">
+            <button type="button">
+                <i class="fas fa-phone"></i>
+            </button>
+        </a>
+</div>
+    </section>
+
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('contactModal')">&times;</span>
+        <form action="https://formspree.io/f/xldrrgga" method="POST">
+            <div class="input-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <div class="input-icon">
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <div class="input-icon">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <div class="input-icon">
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    <i class="fas fa-phone"></i>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Type your message here ..." required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Modal Template -->
+<div id="itemModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal1()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <img class="modalimagepro" id="modalImage" src="" alt="Project Image">
+
+    <p id="modalDescription"></p>
+      <p class="skills" id="modalSkills"></p>
+  </div>
+</div>
+   <footer>
+    <p>&copy; 2025 Saufi Anas. All rights reserved.</p>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/anas-saufi/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/asaufi"><i class="fab fa-github"></i></a>
+         
+
+    </div>
+</footer>
+
+    <button class="scroll-up" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollUpButton = document.querySelector('.scroll-up');
+            if (window.pageYOffset > 300) {
+                scrollUpButton.style.display = 'block';
+            } else {
+                scrollUpButton.style.display = 'none';
+            }
+        });
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+
+         function navigateToCV(language) {
+    let url = '';
+
+    // Set the URL based on the selected language
+    if (language === 'fr') {
+        url = 'Downloads/CV-French.pdf'; // French CV URL
+    } else if (language === 'en') {
+        url = 'Download/CV-English.pdf'; // English CV URL
+    }
+
+    // Open the URL in a new tab
+    if (url) {
+        window.open(url, '_blank');
+    }
+}
+       const itemsData = [
+       {
+  title: "Autonomous Fire Detection System – Assistant Developer",
+  description: "Contributed to the development of an autonomous fire detection system by implementing intervention mechanisms, integrating real-time detection data into a database, and creating a responsive web application for alert visualization. This project combined embedded systems and full-stack web development to deliver an effective monitoring solution.",
+  skills: ["JavaScript", "Node.js", "HTML5", "CSS", "MongoDB", "IoT", "Real-time Systems"],
+  image: "image/um6p.png"
+}
+,
+{
+  title: "Secure Real Estate Web Platform – Web Developer",
+  description: "Developed a secure real estate web platform using Express.js and MongoDB. Implemented CRUD operations, user role and session management, route protection, and authentication. Conducted testing to ensure stability and usability. The project enhanced my expertise in backend security and web infrastructure.",
+  skills: ["Node.js", "Express.js", "MongoDB", "JavaScript", "HTML5", "CSS", "Authentication", "Unit Testing"],
+  image: "image/crud.png"
+}
+,
+{
+  title: "Distributed Monitoring System – Software Development Engineer Intern",
+  description: "Currently developing a distributed system for centralized log and trace management using OpenTelemetry, Jaeger, and OpenSearch. Responsible for system prototyping, performance optimization, and visualization workflow enhancement. Collaborating with distributed systems and infrastructure teams to ensure scalable cloud-native solutions.",
+  skills: ["OpenTelemetry", "Jaeger", "OpenSearch", "Docker", "Distributed Systems", "Cloud Infrastructure", "Data Visualization"],
+  image: "image/ds.png"
+}
+
+];
+
+const items = document.querySelectorAll('.item'),
+    controls = document.querySelectorAll('.control'),
+    slideshowItems = document.querySelectorAll('.item'),
+    activeDelay = .76,
+    interval = 5000;
+
+var current = 0;
+const slider = {
+    init: () => {
+
+        controls.forEach((control, index) => {
+            control.addEventListener('click', () => {
+                slider.clickedControl(index);
+            });
+        });
+        controls[current].classList.add('active');
+
+        items[current].classList.add('active');
+    },
+    nextSlide: () => {
+        slider.reset();
+        current = (current + 1) % items.length;
+        controls[current].classList.add('active');
+        items[current].classList.add('active');
+    },
+    reset: () => {
+        items.forEach(item => item.classList.remove('active'));
+        controls.forEach(control => control.classList.remove('active'));
+    },
+    clickedControl: (index) => {
+        slider.reset();
+        current = index;
+        controls[current].classList.add('active');
+        items[current].classList.add('active');
+    },
+    getCurrentIndex: function() {
+        return current;
+    }
+
+};
+
+
+    slideshowItems.forEach(slideshowItem => {
+    slideshowItem.addEventListener('click', () => {
+        const currentIndex = slider.getCurrentIndex();
+        openModal1(itemsData[currentIndex] )
+    });
+});
+slider.init();
+setInterval(slider.nextSlide, interval);
+
+function openModal(modalId) {
+document.getElementById(modalId).style.display = 'flex'; // Change display to flex for modal visibility
+}
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+}
+
+    document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        const textArray = ["Software Engineer", "Full-Stack Developer", "Cloud & Distributed Systems Specialist"];
+        let typingDelay = 100;
+        let erasingDelay = 50;
+        let newTextDelay = 1000; // Delay between current and next text
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                document.querySelector(".writing-effect").textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } else {
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                document.querySelector(".writing-effect").textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } else {
+                textArrayIndex = (textArrayIndex + 1) % textArray.length;
+                setTimeout(type, typingDelay + 1100);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() { // On DOM load initiate the effect
+            setTimeout(type, newTextDelay + 250);
+        });
+        function toggleMenu() {
+    var nav = document.querySelector('nav ul');
+    nav.classList.toggle('show');
+}
+
+
+      function openModal1(item) {
+    // Set the modal's title, description, and image
+    document.getElementById('modalTitle').textContent = item.title;
+    document.getElementById('modalDescription').textContent = item.description;
+    document.getElementById('modalImage').src = item.image;
+
+    // Display the modal
+    document.getElementById('itemModal').style.display = "flex";
+
+    // Select the skills container and clear previous skills
+    const skillsContainer = document.getElementById('modalSkills');
+    skillsContainer.innerHTML = ''; // Clear previous skills
+
+    // Add each skill as a span element
+    item.skills.forEach(skill => {
+        const skillItem = document.createElement('span');
+        skillItem.className = 'skill-item';
+        skillItem.innerText = skill;
+        skillsContainer.appendChild(skillItem);
+    });
+}
+
+        function closeModal1() {
+  document.getElementById('itemModal').style.display = "none";
+}
+
+// Add event listener to close button
+document.querySelector('.close').addEventListener('click', closeModal1);
+
+// Close modal if clicked outside of modal content
+window.onclick = function(event) {
+  if (event.target == document.getElementById('itemModal')) {
+    closeModal1();
+  }
+}
+ function closeBanner() {
+        document.getElementById('cookieBanner').style.display = 'none';
+    }
+
+    function acceptCookies() {
+        document.getElementById('cookieBanner').style.display = 'none';
+    }
+    
+    // JavaScript to handle the Shop link click
+document.addEventListener('DOMContentLoaded', () => {
+    const shopLink = document.getElementById('shopLink');
+
+    shopLink.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent the default anchor behavior
+        window.open('https://easylifetoday.com', '_blank'); // Open the shop link in a new tab
+    });
+});
+
+
+    </script>
+</body>
+</html>

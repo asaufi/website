@@ -188,20 +188,24 @@
         }
 
         .hero-image {
-            max-width: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    max-width: 500px; /* Ajuste pour un format carré si besoin */
+    margin: 50px auto 0 auto; /* centré horizontalement + espace au-dessus */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .hero-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            filter: brightness(0.9);
-            transition: filter 0.3s, transform 0.3s;
-            animation: breathing1 4s infinite;
-        }
+.hero-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Assure que l’image est carrée */
+    object-fit: cover; /* Découpe proprement si nécessaire */
+    border-radius: 50%; /* Rend l'image ronde */
+    filter: brightness(0.9);
+    transition: filter 0.3s, transform 0.3s;
+    animation: breathing1 4s infinite;
+}
+
 
         @keyframes breathing1 {
             0%, 100% {
@@ -976,6 +980,37 @@ textarea:hover {
     .project-links a {
         font-size: 16px;  /* Adjust font size for links */
     }
+      .modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+
+  .modalimagepro {
+    max-height: 200px;
+    width: auto;
+    height: auto;
+  }
+
+  .close {
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+  }
+}
+.modal-content {
+  max-height: 90vh;        /* Ne dépasse pas la fenêtre */
+  overflow-y: auto;        /* Active le scroll si nécessaire */
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.close {
+  position: sticky;        /* Reste visible même si on scroll */
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  background-color: #141a1f; /* Même fond que le modal pour lisibilité */
 }
 
 /* For very small screens (like mobile phones) */
@@ -1237,6 +1272,44 @@ textarea:hover {
         text-align: center; /* Align text to the center */
     }
 }
+/* Fix horizontal overflow on mobile */
+
+html, body {
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .logo {
+    padding-left: 10px;
+  }
+
+  nav {
+    padding-right: 10px;
+  }
+}
+
+.slideshow-items {
+  overflow-x: hidden;
+}
+
+.item {
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.skills-container {
+  overflow-x: hidden;
+}
+
         
     </style>
 </head>

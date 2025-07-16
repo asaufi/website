@@ -205,3 +205,34 @@ document.addEventListener('DOMContentLoaded', () => {
         window.open('https://easylifetoday.com', '_blank'); // Open the shop link in a new tab
     });
 });
+
+const slideshowContainer = document.querySelector('.slideshow-items');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slideshowContainer.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slideshowContainer.classList.add('active');
+  startX = e.pageX - slideshowContainer.offsetLeft;
+  scrollLeft = slideshowContainer.scrollLeft;
+});
+
+slideshowContainer.addEventListener('mouseleave', () => {
+  isDown = false;
+  slideshowContainer.classList.remove('active');
+});
+
+slideshowContainer.addEventListener('mouseup', () => {
+  isDown = false;
+  slideshowContainer.classList.remove('active');
+});
+
+slideshowContainer.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slideshowContainer.offsetLeft;
+  const walk = (x - startX) * 2; // scroll speed
+  slideshowContainer.scrollLeft = scrollLeft - walk;
+});

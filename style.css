@@ -1296,3 +1296,24 @@ html, body {
 .skills-container {
   overflow-x: hidden;
 }
+
+.slideshow-items {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
+  padding: 20px;
+  cursor: grab;
+}
+
+.slideshow-items::-webkit-scrollbar {
+  display: none; /* cacher la barre de défilement */
+}
+
+.item {
+  min-width: 100%;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+

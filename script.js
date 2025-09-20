@@ -236,3 +236,14 @@ slideshowContainer.addEventListener('mousemove', (e) => {
   const walk = (x - startX) * 2; // scroll speed
   slideshowContainer.scrollLeft = scrollLeft - walk;
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const text = document.getElementById("projectText");
+  const btn = document.getElementById("toggleBtn");
+
+  btn.addEventListener("click", () => {
+    text.classList.toggle("expanded");
+    btn.textContent = text.classList.contains("expanded")
+      ? "Lire moins..."
+      : "Lire la suite...";
+  });
+});

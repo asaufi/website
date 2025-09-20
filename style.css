@@ -5,6 +5,17 @@
     --modal-background-color: #0b1120; /* Modal background color */
     --text-color: #ffffff; /* White text color */
 }
+#projectText {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;  /* nombre de lignes visibles */
+  -webkit-box-orient: vertical;
+}
+
+#projectText.expanded {
+  -webkit-line-clamp: unset;
+}
+
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
@@ -1317,3 +1328,20 @@ html, body {
   transition: transform 0.3s ease;
 }
 
+#toggleBtn {
+  background-color: #4fe0e9; /* même couleur que tes autres boutons */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#toggleBtn:hover {
+  background-color: #37c7d3; /* couleur hover */
+  transform: scale(1.05);
+}

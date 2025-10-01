@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
 
     // Set the URL based on the selected language
     if (language === 'fr') {
-        url = 'Downloads/CV_SAUFI_ANAS.pdf'; // French CV URL
+        url = 'Downloads/CV_SAUFI_ANAS_fr.pdf'; // French CV URL
     } else if (language === 'en') {
         url = 'Downloads/CV_SAUFI_ANAS_eng.pdf'; // English CV URL
     }

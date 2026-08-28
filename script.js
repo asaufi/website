@@ -1,3 +1,18 @@
+// ============================================================
+// Site config
+// ============================================================
+// Set to false to temporarily hide the "Curriculum Vitae" menu item
+// (e.g. while you don't want visitors downloading your CV). Set back
+// to true whenever you want it visible again.
+const CV_DOWNLOAD_ENABLED = false;
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (!CV_DOWNLOAD_ENABLED) {
+    const cvMenuItem = document.getElementById("cvMenuItem");
+    if (cvMenuItem) cvMenuItem.style.display = "none";
+  }
+});
+
 window.addEventListener('scroll', () => {
             const scrollUpButton = document.querySelector('.scroll-up');
             if (window.pageYOffset > 300) {
@@ -26,80 +41,6 @@ window.addEventListener('scroll', () => {
         window.open(url, '_blank');
     }
 }
-       const itemsData = [
-       {
-  title: "Autonomous Fire Detection System – Assistant Developer",
-  description: "Contributed to the development of an autonomous fire detection system by implementing intervention mechanisms, integrating real-time detection data into a database, and creating a responsive web application for alert visualization. This project combined embedded systems and full-stack web development to deliver an effective monitoring solution.",
-  skills: ["JavaScript", "Node.js", "HTML5", "CSS", "MongoDB", "IoT", "Real-time Systems"],
-  image: "image/um6p.png"
-}
-,
-{
-  title: "Secure Real Estate Web Platform – Web Developer",
-  description: "Developed a secure real estate web platform using Express.js and MongoDB. Implemented CRUD operations, user role and session management, route protection, and authentication. Conducted testing to ensure stability and usability. The project enhanced my expertise in backend security and web infrastructure.",
-  skills: ["Node.js", "Express.js", "MongoDB", "JavaScript", "HTML5", "CSS", "Authentication", "Unit Testing"],
-  image: "image/crud.png"
-}
-,
-{
-  title: "Distributed Monitoring System – Software Development Engineer Intern",
-  description: "Currently developing a distributed system for centralized log and trace management using OpenTelemetry, Jaeger, and OpenSearch. Responsible for system prototyping, performance optimization, and visualization workflow enhancement. Collaborating with distributed systems and infrastructure teams to ensure scalable cloud-native solutions.",
-  skills: ["OpenTelemetry", "Jaeger", "OpenSearch", "Docker", "Distributed Systems", "Cloud Infrastructure", "Data Visualization"],
-  image: "image/ds.png"
-}
-
-];
-
-const items = document.querySelectorAll('.item'),
-    controls = document.querySelectorAll('.control'),
-    slideshowItems = document.querySelectorAll('.item'),
-    activeDelay = .76,
-    interval = 5000;
-
-var current = 0;
-const slider = {
-    init: () => {
-
-        controls.forEach((control, index) => {
-            control.addEventListener('click', () => {
-                slider.clickedControl(index);
-            });
-        });
-        controls[current].classList.add('active');
-
-        items[current].classList.add('active');
-    },
-    nextSlide: () => {
-        slider.reset();
-        current = (current + 1) % items.length;
-        controls[current].classList.add('active');
-        items[current].classList.add('active');
-    },
-    reset: () => {
-        items.forEach(item => item.classList.remove('active'));
-        controls.forEach(control => control.classList.remove('active'));
-    },
-    clickedControl: (index) => {
-        slider.reset();
-        current = index;
-        controls[current].classList.add('active');
-        items[current].classList.add('active');
-    },
-    getCurrentIndex: function() {
-        return current;
-    }
-
-};
-
-
-    slideshowItems.forEach(slideshowItem => {
-    slideshowItem.addEventListener('click', () => {
-        const currentIndex = slider.getCurrentIndex();
-        openModal1(itemsData[currentIndex] )
-    });
-});
-slider.init();
-setInterval(slider.nextSlide, interval);
 
 function openModal(modalId) {
 document.getElementById(modalId).style.display = 'flex'; // Change display to flex for modal visibility
@@ -116,7 +57,7 @@ function closeModal(modalId) {
                 });
             });
         });
-        const textArray = ["Software Engineer", "Full-Stack Developer", "Cloud & Distributed Systems Specialist"];
+        const textArray = ["Software & Automation Engineer", "Industrial Automation Specialist", "Full-Stack Developer"];
         let typingDelay = 100;
         let erasingDelay = 50;
         let newTextDelay = 1000; // Delay between current and next text
@@ -151,43 +92,6 @@ function closeModal(modalId) {
     var nav = document.querySelector('nav ul');
     nav.classList.toggle('show');
 }
-
-
-      function openModal1(item) {
-    // Set the modal's title, description, and image
-    document.getElementById('modalTitle').textContent = item.title;
-    document.getElementById('modalDescription').textContent = item.description;
-    document.getElementById('modalImage').src = item.image;
-
-    // Display the modal
-    document.getElementById('itemModal').style.display = "flex";
-
-    // Select the skills container and clear previous skills
-    const skillsContainer = document.getElementById('modalSkills');
-    skillsContainer.innerHTML = ''; // Clear previous skills
-
-    // Add each skill as a span element
-    item.skills.forEach(skill => {
-        const skillItem = document.createElement('span');
-        skillItem.className = 'skill-item';
-        skillItem.innerText = skill;
-        skillsContainer.appendChild(skillItem);
-    });
-}
-
-        function closeModal1() {
-  document.getElementById('itemModal').style.display = "none";
-}
-
-// Add event listener to close button
-document.querySelector('.close').addEventListener('click', closeModal1);
-
-// Close modal if clicked outside of modal content
-window.onclick = function(event) {
-  if (event.target == document.getElementById('itemModal')) {
-    closeModal1();
-  }
-}
  function closeBanner() {
         document.getElementById('cookieBanner').style.display = 'none';
     }
@@ -205,37 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.open('https://easylifetoday.com', '_blank'); // Open the shop link in a new tab
     });
 });
-
-const slideshowContainer = document.querySelector('.slideshow-items');
-
-let isDown = false;
-let startX;
-let scrollLeft;
-
-slideshowContainer.addEventListener('mousedown', (e) => {
-  isDown = true;
-  slideshowContainer.classList.add('active');
-  startX = e.pageX - slideshowContainer.offsetLeft;
-  scrollLeft = slideshowContainer.scrollLeft;
-});
-
-slideshowContainer.addEventListener('mouseleave', () => {
-  isDown = false;
-  slideshowContainer.classList.remove('active');
-});
-
-slideshowContainer.addEventListener('mouseup', () => {
-  isDown = false;
-  slideshowContainer.classList.remove('active');
-});
-
-slideshowContainer.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slideshowContainer.offsetLeft;
-  const walk = (x - startX) * 2; // scroll speed
-  slideshowContainer.scrollLeft = scrollLeft - walk;
-});
 document.addEventListener("DOMContentLoaded", () => {
   const text = document.getElementById("projectText");
   const btn = document.getElementById("toggleBtn");
@@ -246,4 +119,72 @@ document.addEventListener("DOMContentLoaded", () => {
       ? "Lire moins..."
       : "Lire la suite...";
   });
+});
+
+// Experience timeline — reveal each entry as it scrolls into view
+document.addEventListener("DOMContentLoaded", () => {
+  const timelineItems = document.querySelectorAll(".timeline-item");
+  if (!timelineItems.length) return;
+
+  if (!("IntersectionObserver" in window)) {
+    timelineItems.forEach(item => item.classList.add("in-view"));
+    return;
+  }
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2, rootMargin: "0px 0px -60px 0px" });
+
+  timelineItems.forEach(item => revealObserver.observe(item));
+});
+
+// GitHub Activity — pulled live from the GitHub API (no third-party widget,
+// so it no longer depends on an external image service being up)
+document.addEventListener("DOMContentLoaded", () => {
+  const statsEl = document.getElementById("githubStats");
+  const langEl = document.getElementById("githubLanguages");
+  if (!statsEl) return;
+
+  const GH_USER = "asaufi";
+  const setStat = (key, value) => {
+    const el = statsEl.querySelector(`[data-stat="${key}"]`);
+    if (el) el.textContent = value;
+  };
+
+  fetch(`https://api.github.com/users/${GH_USER}`)
+    .then(res => {
+      if (!res.ok) throw new Error("profile fetch failed");
+      return res.json();
+    })
+    .then(user => {
+      setStat("repos", user.public_repos);
+      setStat("followers", user.followers);
+      setStat("since", new Date(user.created_at).getFullYear());
+      return fetch(`https://api.github.com/users/${GH_USER}/repos?per_page=100`);
+    })
+    .then(res => {
+      if (!res.ok) throw new Error("repos fetch failed");
+      return res.json();
+    })
+    .then(repos => {
+      const counts = {};
+      repos.forEach(repo => {
+        if (repo.language) counts[repo.language] = (counts[repo.language] || 0) + 1;
+      });
+      const topLanguages = Object.entries(counts)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 6)
+        .map(([lang]) => lang);
+      if (langEl && topLanguages.length) {
+        langEl.innerHTML = topLanguages.map(lang => `<span>${lang}</span>`).join("");
+      }
+    })
+    .catch(() => {
+      statsEl.innerHTML = '<p class="github-fallback">Live stats are unavailable right now — see the profile directly.</p>';
+    });
 });

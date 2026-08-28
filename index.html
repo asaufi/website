@@ -6,7 +6,7 @@
     <meta name="description" content="Anas SAUFI - Software engineer">
     <title>Anas Saufi - Better Hire Anas !</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
        <link rel="icon" href="Image/logo.png" type="image/png">
 
 
@@ -24,8 +24,9 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Experiences</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
+                <li class="dropdown" id="cvMenuItem">
                      <a style="cursor: pointer;">Curriculum Vitae</a>
                         <ul class="dropdown-menu">
                          <li><a href="#" onclick="navigateToCV('fr')">French</a></li>
@@ -36,24 +37,25 @@
             </ul>
         </nav>
     </header>
-    <div class="cookie-banner" id="cookieBanner">
+    <!--<div class="cookie-banner" id="cookieBanner">
     <div class="cookie-banner-content">
         <h4>Why do we use cookies?</h4>
         <p>They help us ensure the proper functioning of the site and monitor the audience of our websites.</p>
-        <small>Consent certified by <strong>ExpertKick</strong>.</small>
+        
     </div>
     <div class="cookie-banner-buttons">
         <button class="btn-close" onclick="closeBanner()">Close</button>
         <button class="btn-accept" onclick="acceptCookies()">Accept</button>
     </div>
+-->
 </div>
     <section id="home" class="hero">
         <div class="content">
-            <h1>Hey ! I am SAUFI Anas</h1>
+            <h1>Hey, I&rsquo;m Anas Saufi.</h1>
             <div class="write">
             <h2 class="writing-effect"></h2>
                 </div>
-            <p>I’m passionate about software engineering, from backend systems in C++ to full-stack web development with React and Node.js. With a strong interest in distributed systems and real-time data solutions, I aim to design efficient, scalable platforms that meet today’s technical challenges.</p>
+            <p>I'm working as a Software &amp; Automation Engineer at MCE Automation, bridging industrial control systems &mdash; SCADA, PLC programming &mdash; with the web and ERP applications built around them. My background is in full-stack development and C++, and I care about building efficient, reliable systems, whether that&rsquo;s a production line running in real time or a distributed backend.</p>
             <div class="buttons">
                 <button onclick="window.location.href='#services'">Explore Services</button>
                 <button onclick="window.location.href='#contact'">Get in Touch</button>
@@ -70,19 +72,19 @@
             
             <div class="service">
                 <h3>Full-Stack Development</h3>
-                <p>Building scalable web applications from front-end to back-end.</p>
+                <p>Building scalable web applications from front-end to back-end, with React, Node.js and Express.</p>
             </div>
             <div class="service">
-                <h3>C++ Development</h3>
-                <p>Building robust and scalable applications using C++.</p>
+                <h3>Industrial Automation</h3>
+                <p>Programming and integrating SCADA and PLC systems (Zenon, B&amp;R, OPC UA, IEC 61131-3) on the shop floor.</p>
             </div>
             <div class="service">
-                <h3>AI Solutions</h3>
-                <p>Implementing AI and machine learning models to solve complex problems.</p>
+                <h3>C&#43;&#43; &amp; Distributed Systems</h3>
+                <p>Building efficient, reliable systems in C&#43;&#43; &mdash; from observability platforms to real-time processing.</p>
             </div>
             <div class="service">
-                <h3>UI Design</h3>
-                <p>Crafting intuitive and visually appealing user interfaces, leveraging top-notch design skills to enhance user experience.</p>
+                <h3>ERP &amp; Odoo Development</h3>
+                <p>Customizing and extending Odoo ERP with PHP to connect business processes and shop-floor data.</p>
             </div>
         </div>
     </section>
@@ -116,109 +118,145 @@ The technologies I worked with included C++, gRPC, Docker, OpenTelemetry, Jaeger
 
 
 <section id="projects" class="projects">
-    <h2>Experiences & Projects</h2>
-   <div class="content-width">
-<div class="slideshow"  >
-    <!-- Slideshow Items -->
-    <div class="controls">
-      <ul>
-        <li class="control" data-index="0"></li>
-        <li class="control" data-index="1"></li>
-        <li class="control" data-index="2"></li>
-         
-      </ul>
+    <h2 class="section-title">Experience &amp; Projects</h2>
+    <div class="timeline">
+
+      <div class="timeline-item timeline-current">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card">
+          <img class="timeline-image" src="image/mce-automation.jpg" alt="MCE Automation">
+          <div class="timeline-body">
+            <span class="timeline-role">Ingénieur Informatique <span class="timeline-badge">Present</span></span>
+            <h3>MCE Automation</h3>
+            <p>Since May 2026, working as a Software &amp; Automation Engineer in Le Havre, spanning industrial automation (Zenon SCADA, B&amp;R Automation Studio, OPC UA, IEC 61131-3) and web/software development (PHP, JavaScript, Odoo ERP) — bridging shop-floor systems and business applications.</p>
+            <div class="timeline-tags">
+              <span>Zenon SCADA</span><span>B&amp;R Automation Studio</span><span>OPC UA</span><span>IEC 61131-3</span><span>PHP</span><span>Odoo ERP</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card">
+          <img class="timeline-image" src="image/ds-titre.png" alt="Distributed monitoring system">
+          <div class="timeline-body">
+            <span class="timeline-role">Software Development Engineer Intern</span>
+            <h3>Distributed Monitoring System — Dassault Systèmes</h3>
+            <p>Prototyped a distributed system for centralized log and trace management using OpenTelemetry, Jaeger, and OpenSearch. Studied scalable architectures, optimized data analysis workflows, and collaborated with infrastructure and distributed computing teams on cloud-native, real-time monitoring solutions.</p>
+            <div class="timeline-tags">
+              <span>OpenTelemetry</span><span>Jaeger</span><span>OpenSearch</span><span>Docker</span><span>Distributed Systems</span><span>Cloud Infrastructure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card">
+          <img class="timeline-image" src="image/2-titre.png" alt="Secure real estate platform">
+          <div class="timeline-body">
+            <span class="timeline-role">Web Developer</span>
+            <h3>Secure Real Estate Platform</h3>
+            <p>Developed a full-featured real estate platform focused on security and user experience. Implemented complete CRUD operations with Express.js and MongoDB, designed user/agent role management, integrated authentication and route security, and covered the codebase with unit and functional tests.</p>
+            <div class="timeline-tags">
+              <span>Express.js</span><span>MongoDB</span><span>Authentication</span><span>Unit Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card">
+          <img class="timeline-image" src="image/um6p-titre.png" alt="Autonomous fire detection system">
+          <div class="timeline-body">
+            <span class="timeline-role">Assistant Developer</span>
+            <h3>Autonomous Fire Detection System</h3>
+            <p>Contributed to the design and implementation of an autonomous fire detection system: engineered real-time intervention mechanisms, built a structured database to collect detection data, and developed a responsive web application to visualize alerts as they occurred.</p>
+            <div class="timeline-tags">
+              <span>JavaScript</span><span>Node.js</span><span>MongoDB</span><span>IoT</span><span>Real-time Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-<div class="slideshow-items">
-      <div class="item"  id="project1">
-        <div class="item-image-container">
-          <img class="item-image" src="image/um6p-titre.png" />
-        </div>
-        <div class="item-description">
-          <span class="vertical-part">
-            <b class="item-text-header">Assistant Developer – Autonomous Fire Detection System</b>
-          </span>
-            <span class="vertical-part">
-              <b>As an Assistant Developer, I contributed to the design and implementation of an autonomous fire detection system. My role involved engineering real-time intervention mechanisms, building a structured database to collect detection data, and developing a responsive web application to visualize alerts as they occurred. This project combined embedded systems with full-stack development, reinforcing my ability to deliver real-world solutions that integrate software and hardware effectively.</b>
-          </span>
-        </div>
-      </div>
-      <div class="item" id="project2" >
-        <div class="item-image-container">
-          <img class="item-image" src="image/2-titre.png" />
-        </div>
-        <!-- Staggered Description Elements -->
-        <div class="item-description">
-          <span class="vertical-part">
-            <b class="item-text-header" > Web Developer – Secure Real Estate Platform</b>
-          </span>
-            <span class="vertical-part">
-                <b>During this internship, I developed a full-featured real estate platform with a focus on security and user experience. Using Express.js and MongoDB, I implemented complete CRUD operations and designed user and agent role management. I integrated authentication, session handling, and route security, ensuring the platform adhered to modern web standards. I also conducted unit and functional tests to maintain code reliability and system robustness. This experience strengthened my backend development skills and deepened my understanding of web application security.</b>
-            </span>
-        </div>
-      </div>
-      <div class="item" id="project3" >
-        <div class="item-image-container">
-          <img class="item-image" src="image/ds-titre.png" />
-        </div>
+</section>
 
-        <!-- Staggered Description Elements -->
-        <div class="item-description">
-          <span class="vertical-part">
-            <b class="item-text-header">Software Development Engineer Intern – Distributed Monitoring System</b>
-          </span>
-          <span class="vertical-part">
-            <b>Currently working as a Software Development Engineer Intern at Dassault Systèmes, where I am prototyping a distributed system for centralized log and trace management. I am leveraging technologies such as OpenTelemetry, Jaeger, and OpenSearch to design solutions that handle high-volume data flows efficiently. My responsibilities include studying scalable architectures, optimizing data analysis workflows, and collaborating closely with infrastructure and distributed computing teams. This internship is deepening my expertise in cloud-native systems and real-time monitoring solutions.</b>
-          </span>
+<section id="education" class="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education-container">
+        <div class="education-item">
+            <img class="education-diploma" src="image/diploma.jpg" alt="Master's diploma, Université Le Havre Normandie" loading="lazy">
+            <div class="education-text">
+                <div class="education-degree">Master &mdash; Ingénierie du Web, des Objets Communicants et Systèmes Complexes</div>
+                <div class="education-date">2024 &ndash; 2025</div>
+                <p>Mention Informatique, Sciences Technologies Santé &mdash; Université Le Havre Normandie.</p>
+            </div>
         </div>
-      </div>
-
-    
-    
-
-  </div>
-</div>
+    </div>
 </section>
 
 <section id="skills" class="skills-section">
     <h2 class="section-title">Technical Skills & Core Competencies</h2>
     <div class="skills-container">
         <div class="skills-marquee">
-
-            <div class="skill-item">
-                <img src="image/c++.png" alt="c">
-            </div>
-            <div class="skill-item">
-                <img src="image/docker.png" alt="Docker">
-            </div>
-            <div class="skill-item">
-                <img src="image/Kube.png" alt="Kubernetes">
-            </div>
-            <div class="skill-item">
-                <img src="image/react.png" alt="Jira">
-            </div>
-            <div class="skill-item">
-                <img src="image/Python.png" alt="Python">
-            </div>
-            <div class="skill-item">
-                <img src="image/gitlab.png" alt="Gitlab">
-            </div>
-           
-            <div class="skill-item">
-                <img src="image/js.png" alt="JavaScript">
-            </div>
-            <div class="skill-item">
-                <img src="image/sql.png" alt="SQL">
-            </div>
-            
-            
-            
-            
-            <!-- Add more skill items as needed -->
+            <div class="skill-item"><img src="image/c++.png" alt="C++"></div>
+            <div class="skill-item"><img src="image/docker.png" alt="Docker"></div>
+            <div class="skill-item"><img src="image/Kube.png" alt="Kubernetes"></div>
+            <div class="skill-item"><img src="image/react.png" alt="React"></div>
+            <div class="skill-item"><img src="image/Python.png" alt="Python"></div>
+            <div class="skill-item"><img src="image/gitlab.png" alt="GitLab"></div>
+            <div class="skill-item"><img src="image/js.png" alt="JavaScript"></div>
+            <div class="skill-item"><img src="image/sql.png" alt="SQL"></div>
+            <div class="skill-item" aria-hidden="true"><img src="image/c++.png" alt=""></div>
+            <div class="skill-item" aria-hidden="true"><img src="image/docker.png" alt=""></div>
+            <div class="skill-item" aria-hidden="true"><img src="image/Kube.png" alt=""></div>
+            <div class="skill-item" aria-hidden="true"><img src="image/react.png" alt=""></div>
+            <div class="skill-item" aria-hidden="true"><img src="image/Python.png" alt=""></div>
+            <div class="skill-item" aria-hidden="true"><img src="image/gitlab.png" alt=""></div>
+            <div class="skill-item" aria-hidden="true"><img src="image/js.png" alt=""></div>
+            <div class="skill-item" aria-hidden="true"><img src="image/sql.png" alt=""></div>
         </div>
     </div>
 </section>
 
 
+
+<section id="github-activity" class="github-activity">
+    <h2 class="section-title">GitHub Activity</h2>
+    <div class="github-stats" id="githubStats">
+        <div class="github-stat-tile">
+            <span class="github-stat-value" data-stat="repos">&mdash;</span>
+            <span class="github-stat-label">Public repos</span>
+        </div>
+        <div class="github-stat-tile">
+            <span class="github-stat-value" data-stat="followers">&mdash;</span>
+            <span class="github-stat-label">Followers</span>
+        </div>
+        <div class="github-stat-tile">
+            <span class="github-stat-value" data-stat="since">&mdash;</span>
+            <span class="github-stat-label">On GitHub since</span>
+        </div>
+    </div>
+    <div class="github-languages" id="githubLanguages"></div>
+    <a class="github-profile-link" href="https://github.com/asaufi" target="_blank" rel="noopener">View full profile on GitHub &rarr;</a>
+</section>
+
+<section id="notes" class="notes">
+    <h2 class="section-title">Notes</h2>
+    <div class="notes-container">
+        <div class="note-card">
+            <h3>On Observability at Scale</h3>
+            <p>Correlating traces, logs and metrics across a distributed system sounds simple until every service names things differently. Most of the real work on the Dassault Systèmes platform was schema and naming discipline, not the tracing tool itself.</p>
+        </div>
+        <div class="note-card">
+            <h3>Where Software Meets the Shop Floor</h3>
+            <p>Moving from cloud-native distributed systems to SCADA and PLC programming at MCE Automation has been a useful reset: IT assumes the network is unreliable, OT assumes it barely exists. Designing for both means questioning fewer assumptions.</p>
+        </div>
+    </div>
+</section>
 
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
@@ -278,18 +316,6 @@ The technologies I worked with included C++, gRPC, Docker, OpenTelemetry, Jaeger
     </div>
 </div>
 
-
-<!-- Modal Template -->
-<div id="itemModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal1()">&times;</span>
-    <h2 id="modalTitle"></h2>
-    <img class="modalimagepro" id="modalImage" src="" alt="Project Image">
-
-    <p id="modalDescription"></p>
-      <p class="skills" id="modalSkills"></p>
-  </div>
-</div>
    <footer>
     <p>&copy; 2025 Saufi Anas. All rights reserved.</p>
     <div class="social-media">

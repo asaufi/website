@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anas SAUFI - Software engineer">
+    <title>Anas Saufi - Better Hire Anas !</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+       <link rel="icon" href="Image/logo.png" type="image/png">
+
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">Anas.</div>
+        <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Experiences</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                     <a style="cursor: pointer;">Curriculum Vitae</a>
+                        <ul class="dropdown-menu">
+                         <li><a href="#" onclick="navigateToCV('fr')">French</a></li>
+                        <li><a href="#" onclick="navigateToCV('en')">English</a></li>
+                </ul>
+                 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner-content">
+        <h4>Why do we use cookies?</h4>
+        <p>They help us ensure the proper functioning of the site and monitor the audience of our websites.</p>
+        <small>Consent certified by <strong>ExpertKick</strong>.</small>
+    </div>
+    <div class="cookie-banner-buttons">
+        <button class="btn-close" onclick="closeBanner()">Close</button>
+        <button class="btn-accept" onclick="acceptCookies()">Accept</button>
+    </div>
+</div>
+    <section id="home" class="hero">
+        <div class="content">
+            <h1>Hey ! I am SAUFI Anas</h1>
+            <div class="write">
+            <h2 class="writing-effect"></h2>
+                </div>
+            <p>I’m passionate about software engineering, from backend systems in C++ to full-stack web development with React and Node.js. With a strong interest in distributed systems and real-time data solutions, I aim to design efficient, scalable platforms that meet today’s technical challenges.</p>
+            <div class="buttons">
+                <button onclick="window.location.href='#services'">Explore Services</button>
+                <button onclick="window.location.href='#contact'">Get in Touch</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="Downloads/portrait.png" alt="Hero Image">
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <div class="service-container">
+            
+            <div class="service">
+                <h3>Full-Stack Development</h3>
+                <p>Building scalable web applications from front-end to back-end.</p>
+            </div>
+            <div class="service">
+                <h3>C++ Development</h3>
+                <p>Building robust and scalable applications using C++.</p>
+            </div>
+            <div class="service">
+                <h3>AI Solutions</h3>
+                <p>Implementing AI and machine learning models to solve complex problems.</p>
+            </div>
+            <div class="service">
+                <h3>UI Design</h3>
+                <p>Crafting intuitive and visually appealing user interfaces, leveraging top-notch design skills to enhance user experience.</p>
+            </div>
+        </div>
+    </section>
+    <h2 class="section-title">Latest Project</h2>
+<section id="latest-project" class="latest-project">
+    
+    <div class="project-header">
+        <p class="project-name">Observability Integration in C++</p>
+        <p class="project-date">12 September 2025</p>
+    </div>
+    <div class="project-info">
+        <div class="project-image">
+            <img src="Downloads/latest_project.png" alt="QA Automator Docker Image">
+        </div>
+        <div class="project-description">
+            <p  id="projectText">I worked in my internship on a project focused on trace and log management within a distributed cloud architecture at Dassault Systèmes' R&D 3DExperience division. My main responsibility was to design and implement a unified and scalable observability platform that could be accessed across the company's services. This involved migrating from heterogeneous environments to a standardized solution, leveraging OpenTelemetry and Jaeger for distributed tracing.
+
+Additionally, I integrated OpenSearch Dashboards to enhance the system’s capabilities with advanced indexing, full-text search, and real-time event visualization. A key part of the project was defining a common log and trace schema, which included field enrichment, metadata management, and standardized mappings to ensure consistency across the platform.
+
+I also built a unified workflow that streamlined the collection, processing, storage, and visualization of data, providing an efficient end-to-end observability pipeline. To ensure the platform could scale effectively, I conducted extensive performance and consistency testing to validate the scalability and data integrity.
+
+The technologies I worked with included C++, gRPC, Docker, OpenTelemetry, Jaeger, OpenSearch, and Kibana, which were all integral to the success of the platform’s development and deployment.</p>
+  <button id="toggleBtn">Lire la suite...</button>
+           
+<div class="project-links">
+        
+    </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="projects">
+    <h2>Experiences & Projects</h2>
+   <div class="content-width">
+<div class="slideshow"  >
+    <!-- Slideshow Items -->
+    <div class="controls">
+      <ul>
+        <li class="control" data-index="0"></li>
+        <li class="control" data-index="1"></li>
+        <li class="control" data-index="2"></li>
+         
+      </ul>
+    </div>
+<div class="slideshow-items">
+      <div class="item"  id="project1">
+        <div class="item-image-container">
+          <img class="item-image" src="image/um6p-titre.png" />
+        </div>
+        <div class="item-description">
+          <span class="vertical-part">
+            <b class="item-text-header">Assistant Developer – Autonomous Fire Detection System</b>
+          </span>
+            <span class="vertical-part">
+              <b>As an Assistant Developer, I contributed to the design and implementation of an autonomous fire detection system. My role involved engineering real-time intervention mechanisms, building a structured database to collect detection data, and developing a responsive web application to visualize alerts as they occurred. This project combined embedded systems with full-stack development, reinforcing my ability to deliver real-world solutions that integrate software and hardware effectively.</b>
+          </span>
+        </div>
+      </div>
+      <div class="item" id="project2" >
+        <div class="item-image-container">
+          <img class="item-image" src="image/2-titre.png" />
+        </div>
+        <!-- Staggered Description Elements -->
+        <div class="item-description">
+          <span class="vertical-part">
+            <b class="item-text-header" > Web Developer – Secure Real Estate Platform</b>
+          </span>
+            <span class="vertical-part">
+                <b>During this internship, I developed a full-featured real estate platform with a focus on security and user experience. Using Express.js and MongoDB, I implemented complete CRUD operations and designed user and agent role management. I integrated authentication, session handling, and route security, ensuring the platform adhered to modern web standards. I also conducted unit and functional tests to maintain code reliability and system robustness. This experience strengthened my backend development skills and deepened my understanding of web application security.</b>
+            </span>
+        </div>
+      </div>
+      <div class="item" id="project3" >
+        <div class="item-image-container">
+          <img class="item-image" src="image/ds-titre.png" />
+        </div>
+
+        <!-- Staggered Description Elements -->
+        <div class="item-description">
+          <span class="vertical-part">
+            <b class="item-text-header">Software Development Engineer Intern – Distributed Monitoring System</b>
+          </span>
+          <span class="vertical-part">
+            <b>Currently working as a Software Development Engineer Intern at Dassault Systèmes, where I am prototyping a distributed system for centralized log and trace management. I am leveraging technologies such as OpenTelemetry, Jaeger, and OpenSearch to design solutions that handle high-volume data flows efficiently. My responsibilities include studying scalable architectures, optimizing data analysis workflows, and collaborating closely with infrastructure and distributed computing teams. This internship is deepening my expertise in cloud-native systems and real-time monitoring solutions.</b>
+          </span>
+        </div>
+      </div>
+
+    
+    
+
+  </div>
+</div>
+</section>
+
+<section id="skills" class="skills-section">
+    <h2 class="section-title">Technical Skills & Core Competencies</h2>
+    <div class="skills-container">
+        <div class="skills-marquee">
+
+            <div class="skill-item">
+                <img src="image/c++.png" alt="c">
+            </div>
+            <div class="skill-item">
+                <img src="image/docker.png" alt="Docker">
+            </div>
+            <div class="skill-item">
+                <img src="image/Kube.png" alt="Kubernetes">
+            </div>
+            <div class="skill-item">
+                <img src="image/react.png" alt="Jira">
+            </div>
+            <div class="skill-item">
+                <img src="image/Python.png" alt="Python">
+            </div>
+            <div class="skill-item">
+                <img src="image/gitlab.png" alt="Gitlab">
+            </div>
+           
+            <div class="skill-item">
+                <img src="image/js.png" alt="JavaScript">
+            </div>
+            <div class="skill-item">
+                <img src="image/sql.png" alt="SQL">
+            </div>
+            
+            
+            
+            
+            <!-- Add more skill items as needed -->
+        </div>
+    </div>
+</section>
+
+
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for any inquiries or collaborations.</p>
+      <div class="buttons1">
+    <button onclick="openModal('contactModal')">
+        <i class="fas fa-envelope"></i>
+    </button>
+       <a href="tel:+33753774592">
+            <button type="button">
+                <i class="fas fa-phone"></i>
+            </button>
+        </a>
+</div>
+    </section>
+
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('contactModal')">&times;</span>
+        <form action="https://formspree.io/f/mzzrdllq" method="POST">
+            <div class="input-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <div class="input-icon">
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <div class="input-icon">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <div class="input-icon">
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    <i class="fas fa-phone"></i>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Type your message here ..." required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Modal Template -->
+<div id="itemModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal1()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <img class="modalimagepro" id="modalImage" src="" alt="Project Image">
+
+    <p id="modalDescription"></p>
+      <p class="skills" id="modalSkills"></p>
+  </div>
+</div>
+   <footer>
+    <p>&copy; 2025 Saufi Anas. All rights reserved.</p>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/anas-saufi/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/asaufi"><i class="fab fa-github"></i></a>
+         
+
+    </div>
+</footer>
+
+    <button class="scroll-up" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

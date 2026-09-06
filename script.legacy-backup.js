@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
   btn.addEventListener("click", () => {
     text.classList.toggle("expanded");
     btn.textContent = text.classList.contains("expanded")
-      ? "Lire moins..."
-      : "Lire la suite...";
+    ? "Read less..."
+    : "Read more...";
   });
 });

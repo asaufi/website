@@ -186,8 +186,8 @@
         }
 
         .hero-image {
-    max-width: 500px; /* Ajuste pour un format carré si besoin */
-    margin: 50px auto 0 auto; /* centré horizontalement + espace au-dessus */
+    max-width: 500px; /* Adjust for a square format if needed */
+    margin: 50px auto 0 auto; /* centered with space above */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,9 +196,9 @@
 .hero-image img {
     width: 100%;
     height: auto;
-    aspect-ratio: 1 / 1; /* Assure que l’image est carrée */
-    object-fit: cover; /* Découpe proprement si nécessaire */
-    border-radius: 50%; /* Rend l'image ronde */
+    aspect-ratio: 1 / 1; /* Ensures the image is square */
+    object-fit: cover; /* Crops cleanly when necessary */
+    border-radius: 50%; /* Makes the image round */
     filter: brightness(0.9);
     transition: filter 0.3s, transform 0.3s;
     animation: breathing1 4s infinite;
@@ -998,17 +998,17 @@ textarea:hover {
   }
 }
 .modal-content {
-  max-height: 90vh;        /* Ne dépasse pas la fenêtre */
-  overflow-y: auto;        /* Active le scroll si nécessaire */
+    max-height: 90vh;        /* Does not exceed the viewport */
+    overflow-y: auto;        /* Enables scrolling when necessary */
   padding-top: 20px;
   box-sizing: border-box;
 }
 .close {
-  position: sticky;        /* Reste visible même si on scroll */
+    position: sticky;        /* Remains visible while scrolling */
   top: 10px;
   right: 10px;
   z-index: 100;
-  background-color: #141a1f; /* Même fond que le modal pour lisibilité */
+    background-color: #141a1f; /* Same background as the modal for readability */
 }
 
 /* For very small screens (like mobile phones) */
@@ -1319,7 +1319,7 @@ html, body {
 }
 
 .slideshow-items::-webkit-scrollbar {
-  display: none; /* cacher la barre de défilement */
+    display: none; /* hide the scrollbar */
 }
 
 .item {
@@ -1329,7 +1329,7 @@ html, body {
 }
 
 #toggleBtn {
-  background-color: #4fe0e9; /* même couleur que tes autres boutons */
+    background-color: #4fe0e9; /* same color as the other buttons */
   color: #fff;
   border: none;
   padding: 8px 16px;
@@ -1342,6 +1342,6 @@ html, body {
 }
 
 #toggleBtn:hover {
-  background-color: #37c7d3; /* couleur hover */
+    background-color: #37c7d3; /* hover color */
   transform: scale(1.05);
 }
